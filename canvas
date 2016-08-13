@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body{
+			background: #000;
+		}
+		#cvs{
+			/*width: 500px;
+			height: 500px;*/
+			background: #fff;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="cvs" width="500px" height="500px"></canvas>
+
+	<script>
+		var oCvs = document.getElementById('cvs');
+		var context = oCvs.getContext('2d');
+		var oImg = new Image();
+		oImg.onload = function(){
+			context.drawImage(oImg, 0, 0, 200, 200);
+				
+		};
+		oImg.src = 'img/1.jpg';
+
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
